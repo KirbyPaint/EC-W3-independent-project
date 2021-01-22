@@ -59,6 +59,12 @@ Won't you be my neighbor?\
 );\
 Status: Passing
 
+Describe: reverse()\
+Test: "Function will reverse the expected output sentence:"\
+Code: const outputArray = reverse(inputArray);\
+Expect(arrayTest(inputArray[5]).toEqual(5, 4, Won't you be my neighbor?, Boop, Beep, 0);
+Status: Untested
+
 ## Known Bugs
 
 ## Support and contact details
