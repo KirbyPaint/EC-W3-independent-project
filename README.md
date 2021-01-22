@@ -8,11 +8,11 @@
 
 _The purpose of this website is to demonstrate knowledge of looping with Javascript. It takes a user's numerical input and creates a "sentence" based on certain conditions._
 
-_How it functions:_
-_The user inputs a number. This number will then become a sentence, starting at zero, and running until the user's input number is reached. For example, if the user enters "10" for their input, the code will output the sentence, "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10"._
-_Then, the sentence is modified based on certain criteria. Any time there is a "1" in the sentence, that entire number becomes the word "Beep." In the example above, both "1" and "10" will become the word "Beep."_
-_Now, any time there is a "2" in the sentence, that entire number becomes the word "Boop." In the example above, "2" will become the word "Boop." The number 2 condition will supercede the number 1 condition. For example, the number "12" would not render as "Beep," but as "Boop."_
-_Finally, any time there is a "3" in the sentence, that entire number becomes the phrase "Won't you be my neighbor?" In the example above, "3" will become the phrase "Won't you be my neighbor?" The number 3 condition will supercede both the number 2 and 1 conditions. For example, the numbers "23", "13", and "1023" would not render as "Beep" or "Boop," but rather as "Won't you be my neighbor?"_
+How it functions:
+The user inputs a number. This number will then become a sentence, starting at zero, and running until the user's input number is reached. For example, if the user enters "10" for their input, the code will output the sentence, "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10".\
+Then, the sentence is modified based on certain criteria. Any time there is a "1" in the sentence, that entire number becomes the word "Beep." In the example above, both "1" and "10" will become the word "Beep."\
+Now, any time there is a "2" in the sentence, that entire number becomes the word "Boop." In the example above, "2" will become the word "Boop." The number 2 condition will supercede the number 1 condition. For example, the number "12" would not render as "Beep," but as "Boop."\
+Finally, any time there is a "3" in the sentence, that entire number becomes the phrase "Won't you be my neighbor?" In the example above, "3" will become the phrase "Won't you be my neighbor?" The number 3 condition will supercede both the number 2 and 1 conditions. For example, the numbers "23," "13," and "1023," would not render as "Beep" or "Boop," but rather as "Won't you be my neighbor?"
 
 ## Setup/Installation Requirements
 
