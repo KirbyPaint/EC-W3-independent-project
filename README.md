@@ -13,6 +13,12 @@ _The purpose of this website is to <DETAILED PURPOSE>_
 
 * _Please use either a currently updated Firefox or Chrome web browser._
 
+## Specifications
+
+Describe: FUNCTION()\
+Test: "Expected Function Desire Here"\
+Expect(FUNCTION(input).toEqual(RESULT);
+
 ## Known Bugs
 
 ## Support and contact details
@@ -21,7 +27,7 @@ _Discord: @KirbyPaint#0751_
 
 ## Technologies Used
 
-_HTML, CSS (Bootstrap), Moria Citadel font by Russ Herschler_
+_HTML, CSS (Bootstrap), JavaScript (jQuery)_
 
 ### License Information
 
