@@ -1,40 +1,29 @@
-function createArray(input) {
-  const outputArray = [];
-  for (i=0; i<=input; i++) {
-    outputArray.push(i);
-  }
-  return outputArray;
-}
-
 function arrayTest(input) {
-  const length = input.length;
-  for (i=0; i<=length; i++) {
-    if (input[i].includes("1")) {
-      if (input[i].includes("2")) {
-        if (input[i].includes("3")) {
-          console.log(3);
-          input[i] = "Won't you be my neighbor?";
-        }
-      }
-      else {
-        console.log(2);
-        input[i] = "Boop";
-      }
+  const outputArray = [];
+  for (let i = 0; i <= input; i++) {
+    if ([i].toString().includes("3")) {
+      outputArray.push("Won't you be my neighbor?");
+    }
+    else if ([i].toString().includes("2")) {
+      outputArray.push("Boop");
+    }
+    else if ([i].toString().includes("1")) {
+      outputArray.push("Beep");
     }
     else {
-      console.log(1);
-      input[i] = "Beep";
+      outputArray.push(i);
     }
   }
-  return input;
+  const formatArray = outputArray.join(", ")
+  return formatArray;
 }
 
 $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     const input = $("input#inputText").val();
-    const inputArray = createArray(input);
-    const outputArray = arrayTest(inputArray);
+    // const inputArray = createArray(input);
+    const outputArray = arrayTest(input);
     $(".return").empty();
     $(".return").append(outputArray);
   });
