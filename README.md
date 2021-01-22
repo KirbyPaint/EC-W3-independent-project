@@ -62,13 +62,13 @@ Status: Passing
 Describe: reverse()\
 Test: "Function will reverse the expected output sentence:"\
 Code: const outputArray = reverse(inputArray);\
-Expect(arrayTest(inputArray[5]).toEqual(5, 4, Won't you be my neighbor?, Boop, Beep, 0);
+Expect(reverse(inputArray[5]).toEqual(5, 4, Won't you be my neighbor?, Boop, Beep, 0);
 Status: Passing
 
 Describe: addName()\
 Test: "Function will add user's name to the "Won't you be my neighbor" text:"\
 Code: const outputArray = addName(inputArray);\
-Expect(arrayTest(inputArray[5], Ash).toEqual(5, 4, Won't you be my neighbor, Ash?, Boop, Beep, 0);
+Expect(addName(inputArray[5], Ash).toEqual(5, 4, Won't you be my neighbor, Ash?, Boop, Beep, 0);
 Status: Untested
 
 ## Known Bugs
