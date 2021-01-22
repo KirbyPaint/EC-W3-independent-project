@@ -19,6 +19,11 @@ Describe: FUNCTION()\
 Test: "Expected Function Desire Here"\
 Expect(FUNCTION(input).toEqual(RESULT);
 
+Describe: createArray()\
+Test: "Function will return an array from 0 to the user-inputted number"\
+Code: const inputArray = createArray(input);
+Expect(createArray(5).toEqual([0, 1, 2, 3, 4, 5]);
+
 ## Known Bugs
 
 ## Support and contact details
