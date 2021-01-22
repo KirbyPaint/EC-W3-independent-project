@@ -3,7 +3,6 @@
 #### _Website to <PURPOSE>_
 
 #### By _**Ash Porter (KirbyPaint)**_
-### Co-authored by _**<AUTHOR>**_
 
 ## Description
 
