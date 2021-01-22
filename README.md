@@ -1,12 +1,15 @@
-# _TEMPLATE_
+# _Mr. Roboger's Neighborhood_
 
-#### _Website to <PURPOSE>_
+#### _Website to demonstrate knowledge of loops, test-driven-design, and separating business/user interface logic_
 
 #### By _**Ash Porter (KirbyPaint)**_
 
 ## Description
 
-_The purpose of this website is to <DETAILED PURPOSE>_
+_The purpose of this website is to demonstrate knowledge of looping with Javascript. It takes a user's numerical input and creates a "sentence" based on certain conditions._
+
+_How it functions:_
+_The user inputs a number. This number will then become a sentence, starting at zero, and running until the user's input number is reached._
 
 ## Setup/Installation Requirements
 
@@ -37,4 +40,4 @@ _HTML, CSS (Bootstrap), JavaScript (jQuery)_
 
 _GNU Public License_\
 
-Copyright (c) 2020 **_KirbyPaint_**
+Copyright (c) 2021 **_KirbyPaint_**

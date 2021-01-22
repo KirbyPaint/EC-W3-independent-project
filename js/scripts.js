@@ -22,7 +22,6 @@ $(document).ready(function() {
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     const input = $("input#inputText").val();
-    // const inputArray = createArray(input);
     const outputArray = arrayTest(input);
     $(".return").empty();
     $(".return").append(outputArray);
