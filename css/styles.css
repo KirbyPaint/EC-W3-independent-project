@@ -10,3 +10,8 @@ html, body {
 .return {
   margin-top: 15px;;
 }
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

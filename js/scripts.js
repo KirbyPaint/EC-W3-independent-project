@@ -70,6 +70,11 @@ $(document).ready(function() {
     $(".return").append(reverse(input));
   });
 
+  $("button#dark-mode").click(function() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+  });
+
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     const input = $("input#inputText").val();
