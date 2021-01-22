@@ -29,6 +29,12 @@ Code: const outputArray = arrayTest(inputArray);\
 Expect(arrayTest(inputArray[5]).toEqual(0, Beep, Boop, Won't you be my neighbor, 4, 5);
 Status: Passing
 
+Describe: lineByLine()\
+Test: "Function will output the array sentence on separate lines, rather than in one line."\
+Code: $(".return").append(lineByLine(outputArray));\
+Expect(arrayTest(inputArray[5]).toEqual(0, Beep, Boop, Won't you be my neighbor, 4, 5);
+Status: Passing
+
 ## Known Bugs
 
 ## Support and contact details
