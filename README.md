@@ -37,16 +37,22 @@ View the project in your browser (Most convenient option):
 
 ## Specifications
 
-Describe: arrayTest()\
+Describe: arrayTest(input)\
 Test: "Function will test array for the following conditions:"\
 1: "If array element contains the number 1, replace with Beep UNLESS"\
 2: "If array element contains the number 2, replace with Boop UNLESS"\
 3: "If array element contains the number 3, replace with Won't you be my neighbor?"\
-Code: const outputArray = arrayTest(inputArray);\
+Code: const outputArray = arrayTest(input);\
 Expect(arrayTest(inputArray[5]).toEqual(0, Beep, Boop, Won't you be my neighbor?, 4, 5);
 Status: Passing
 
-Describe: lineByLine()\
+Describe: arrayTestName(input, name)\
+Test: "Functions identical to arrayTest(), with the addition of adding the user-inputted name to the end of "Won't you be my neighbor?"
+Code: const outputArray = arrayTestName(input, name);\
+Expect(arrayTestName(inputArray[5], Ash).toEqual(0, Beep, Boop, Won't you be my neighbor, Ash?, 4, 5);
+Status: Passing
+
+Describe: lineByLine(input)\
 Test: "Function will output the array sentence on separate lines, rather than in one line."\
 Code: $(".return").append(lineByLine(input));\
 Expect(lineByLine(inputArray[5]).toEqual(\
@@ -59,17 +65,24 @@ Won't you be my neighbor?\
 );\
 Status: Passing
 
-Describe: reverse()\
+Describe: lineByLineName(input, name)\
+Test: "Function will output the array sentence on separate lines, rather than in one line, and will take user's name and add to the end of "Won't you be my neighbor?"\
+Code: $(".return").append(lineByLine(input));\
+Expect(lineByLine(inputArray[5], Ash).toEqual(\
+0\
+Beep\
+Boop\
+Won't you be my neighbor?\
+4\
+5\
+);\
+Status: FAILING
+
+Describe: reverse(input)\
 Test: "Function will reverse the expected output sentence:"\
 Code: const outputArray = reverse(inputArray);\
 Expect(reverse(inputArray[5]).toEqual(5, 4, Won't you be my neighbor?, Boop, Beep, 0);
 Status: Passing
-
-Describe: addName()\
-Test: "Function will add user's name to the "Won't you be my neighbor" text:"\
-Code: const outputArray = addName(inputArray);\
-Expect(addName(inputArray[5], Ash).toEqual(5, 4, Won't you be my neighbor, Ash?, Boop, Beep, 0);
-Status: Untested
 
 ## Known Bugs
 
