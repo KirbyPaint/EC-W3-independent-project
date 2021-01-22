@@ -15,3 +15,8 @@ html, body {
   background-color: black;
   color: white;
 }
+
+img {
+  float: right;
+  margin: 30px;
+}
