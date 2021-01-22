@@ -57,7 +57,6 @@ function reverse(input) {
   return formatArray;
 }
 
-
 $(document).ready(function() {
   $("button#lineByLine").click(function() {
     const input = $("input#inputText").val();
