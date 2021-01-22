@@ -26,13 +26,20 @@ Test: "Function will test array for the following conditions:"\
 2: "If array element contains the number 2, replace with Boop UNLESS"\
 3: "If array element contains the number 3, replace with Won't you be my neighbor?"\
 Code: const outputArray = arrayTest(inputArray);\
-Expect(arrayTest(inputArray[5]).toEqual(0, Beep, Boop, Won't you be my neighbor, 4, 5);
+Expect(arrayTest(inputArray[5]).toEqual(0, Beep, Boop, Won't you be my neighbor?, 4, 5);
 Status: Passing
 
 Describe: lineByLine()\
 Test: "Function will output the array sentence on separate lines, rather than in one line."\
-Code: $(".return").append(lineByLine(outputArray));\
-Expect(arrayTest(inputArray[5]).toEqual(0, Beep, Boop, Won't you be my neighbor, 4, 5);
+Code: $(".return").append(lineByLine(input));\
+Expect(lineByLine(inputArray[5]).toEqual(\
+0\
+Beep\
+Boop\
+Won't you be my neighbor?\
+4\
+5\
+);\
 Status: Passing
 
 ## Known Bugs

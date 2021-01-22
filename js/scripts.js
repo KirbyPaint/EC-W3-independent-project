@@ -22,28 +22,33 @@ function lineByLine(input) {
   const outputArray = [];
   for (let i = 0; i <= input; i++) {
     if ([i].toString().includes("3")) {
-      outputArray.push("Won't you be my neighbor?");
+      outputArray.push("Won't you be my neighbor?<br>");
     }
     else if ([i].toString().includes("2")) {
-      outputArray.push("Boop");
+      outputArray.push("Boop<br>");
     }
     else if ([i].toString().includes("1")) {
-      outputArray.push("Beep");
+      outputArray.push("Beep<br>");
     }
     else {
-      outputArray.push(i);
+      outputArray.push(i + "<br>");
     }
   }
-  const formatArray = outputArray.join("\n");
-  return formatArray;
+  return outputArray;
 }
 
 $(document).ready(function() {
+  $("button#lineByLine").click(function() {
+    const input = $("input#inputText").val();
+    //const outputArray = lineByLine(input);
+    $(".return").empty();
+    $(".return").append(lineByLine(input));
+  });
+
   $("#inputForm").submit(function(event) {
     event.preventDefault();
     const input = $("input#inputText").val();
-    // const outputArray = arrayTest(input);
-    const outputArray = lineByLine(input);
+    const outputArray = arrayTest(input);
     $(".return").empty();
     $(".return").append(outputArray);
   });
