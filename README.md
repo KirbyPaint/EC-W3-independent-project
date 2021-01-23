@@ -84,6 +84,12 @@ Code: const outputArray = reverse(inputArray);\
 Expect(reverse(inputArray[5]).toEqual(5, 4, Won't you be my neighbor?, Boop, Beep, 0);
 Status: Passing
 
+Describe: reverse(input, name)\
+Test: "Function will reverse the expected output sentence and append name to the end of "Won't you be my neighbor?""\
+Code: const outputArray = reverse(inputArray);\
+Expect(reverse(inputArray[5], Ash).toEqual(5, 4, Won't you be my neighbor, Ash?, Boop, Beep, 0);
+Status: Untested
+
 ## Known Bugs
 
 ## Support and contact details

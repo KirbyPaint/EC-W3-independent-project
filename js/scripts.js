@@ -96,6 +96,26 @@ function reverse(input) {
   return formatArray;
 }
 
+function reverseName(input, name) {
+  const outputArray = [];
+  for (let i = input; i >= 0; i--) {
+    if ([i].toString().includes("3")) {
+      outputArray.push("Won't you be my neighbor?");
+    }
+    else if ([i].toString().includes("2")) {
+      outputArray.push("Boop");
+    }
+    else if ([i].toString().includes("1")) {
+      outputArray.push("Beep");
+    }
+    else {
+      outputArray.push(i);
+    }
+  }
+  const formatArray = outputArray.join(", ");
+  return formatArray;
+}
+
 $(document).ready(function() {
   $("button#lineByLine").click(function() {
     const input = $("input#inputText").val();
