@@ -100,7 +100,7 @@ function reverseName(input, name) {
   const outputArray = [];
   for (let i = input; i >= 0; i--) {
     if ([i].toString().includes("3")) {
-      outputArray.push("Won't you be my neighbor?");
+      outputArray.push("Won't you be my neighbor, " + name + "?");
     }
     else if ([i].toString().includes("2")) {
       outputArray.push("Boop");
@@ -132,12 +132,19 @@ $(document).ready(function() {
 
   $("button#reverse").click(function() {
     const input = $("input#inputText").val();
+    const name = $("input#inputName").val();
+    if (name) {
+      outputArray = reverseName(input, name);
+    }
+    else {
+      outputArray = reverse(input);
+    }
     $(".return").empty();
-    $(".return").append(reverse(input));
+    $(".return").append(outputArray);
   });
 
   $("button#dark-mode").click(function() {
-    let element = document.body;
+    const element = document.body;
     element.classList.toggle("dark-mode");
   });
 
