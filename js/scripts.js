@@ -107,7 +107,7 @@ $(document).ready(function() {
       outputArray = lineByLine(input);
     }
     $(".return").empty();
-    $(".return").append(lineByLine(input));
+    $(".return").append(outputArray);
   });
 
   $("button#reverse").click(function() {

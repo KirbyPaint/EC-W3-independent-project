@@ -76,7 +76,7 @@ Won't you be my neighbor?\
 4\
 5\
 );\
-Status: FAILING
+Status: Passing
 
 Describe: reverse(input)\
 Test: "Function will reverse the expected output sentence:"\
