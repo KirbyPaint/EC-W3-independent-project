@@ -99,6 +99,7 @@ _Discord: @KirbyPaint#0751_
 ## Technologies Used
 
 _HTML, CSS (Bootstrap), JavaScript (jQuery)_
+_paint.NET to create Mr. Roboger image._
 
 ### License Information
 
